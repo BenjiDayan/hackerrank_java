@@ -59,11 +59,11 @@ class Pair<U, V>
 public class Solution {
 
     static int minimumSwaps(int[] arr) {
-        List<Integer> seen = new ArrayList<Integer>;
+        List<Integer> seen = new ArrayList<Integer>();
         for (int i1=0; i1 < arr.length; i1++) {
             int index = Collections.binarySearch(seen, i1+1);
             if (index > 0) {
-                seen = seen.add(index, arr[i1]);
+                seen.add(index, arr[i1]);
             }
         }
 
@@ -71,13 +71,12 @@ public class Solution {
         for (int i=0; i<arr.length; i++) {
             output[i] = seen.get(i).intValue();
         }
-        return output
+        return 0;
     }
 
     // Gives index behind which to insert
-    static int binary_insertion_point (int[] arr) {
-
-    }
+//    static int binary_insertion_point (int[] arr) {
+//    }
 
 //    // Complete the minimumSwaps function below.
 //    static int minimumSwaps(int[] arr) {
